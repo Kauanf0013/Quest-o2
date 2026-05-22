@@ -6,7 +6,7 @@ public class Program {
         double temperatura = 999;
         boolean ventiladortabom = false;
 
-        try {
+        try{
          //mano isso verifica a temp do sensoseer
             if (temperatura > 60|| temperatura < -20){
                 throw new LeiturainscostenteExeption
@@ -14,8 +14,9 @@ public class Program {
             }
             System.out.println("Temperatura de agr: "+ temperatura);
             //vai dizerr se a temp ta alta men wild
-            if (temperatura >30){
-                System.out.println("Ventila ligandoooo");
+            if (temperatura >30){t
+                System.
+            .out.println("Ventila ligandoooo");
 
                 if (ventiladortabom){
                     throw new FalhaAtuadorException
@@ -31,19 +32,10 @@ public class Program {
             else{
                 System.out.println("Tempertaura ta no ponto");
             }
-        } catch (LeiturainscostenteExeption e) {
+        } catch (LeiturainscostenteExeption e){
             System.out.println(e.getMessage());
-        } catch (FalhaAtuadorException e) {
+        } catch (FalhaAtuadorException e){
             System.out.println(e.getMessage());
-        }finally{
-            try{
-                FileWriter writer = new FileWriter("log.txt",true);
-                writer.write("tentatica foi registrada no sistema\n");
-                writer.close();
-                System.out.println("log atualiozu");
-            } catch (IOException e){
-                System.out.println("Erro aao atualizar");
-            }
         }
     }
 }
