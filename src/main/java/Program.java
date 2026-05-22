@@ -14,9 +14,8 @@ public class Program {
             }
             System.out.println("Temperatura de agr: "+ temperatura);
             //vai dizerr se a temp ta alta men wild
-            if (temperatura >30){t
-                System.
-            .out.println("Ventila ligandoooo");
+            if (temperatura >30){
+                System.out.println("Ventila ligandoooo");
 
                 if (ventiladortabom){
                     throw new FalhaAtuadorException
